@@ -1,0 +1,72 @@
+body {
+    background: #D9D7F1;
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+}
+ div {
+  line-height: 100px;
+  width: 100px;
+  text-transform:capitalize ;
+  height: 100px;
+  transition: width 0.8s;
+  border-radius: 25px;
+}
+.one {
+  width: 100px;
+  height: 100px;
+  background: #FFFDDE;
+  transition: width 0.5s;
+  border-radius: 3px;
+}
+.two {
+  width: 100px;
+  height: 100px;
+  background: #E7FBBE;
+  transition: width 1s;
+  border-radius: 10px;
+}
+.three {
+  width: 100px;
+  height: 100px;
+  background: #FFCBCB;
+  transition: width 1.8s;
+  border-radius: 30px;
+}
+.foure {
+  width: 100px;
+  height: 100px;
+  background: #BFA2DB;
+  transition: width 2s;
+  border-radius: 17%;
+}
+.five {
+  width: 100px;
+  height: 100px;
+  background: #6B7AA1;
+  transition: height 2.3s;
+  
+}
+
+.one  {transition-timing-function: linear;}
+.two {transition-timing-function: ease;}
+.three {transition-timing-function: ease-in;}
+.foure {transition-timing-function: ease-out;}
+.five {transition-timing-function: ease-in-out;}
+
+
+.one:hover {
+  width: 200px;
+} 
+.two:hover {
+  width: 250px;
+} 
+.three:hover {
+  width: 375px;
+} 
+.foure:hover {
+  width: 500px;
+} 
+.five:hover {
+  height: 250px;
+} 

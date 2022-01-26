@@ -1,0 +1,142 @@
+body{
+    background: #155D27;
+  padding-top: 50px;
+  padding-right: 450px;
+  padding-left: 700px;
+
+}
+@keyframes fill-level {
+	 0% {
+		 transform: translate3d(-413px, -53px, 0) rotate(45deg);
+	}
+	 15% {
+		 transform: translate3d(-393px, -73px, 0) rotate(25deg);
+	}
+	 30% {
+		 transform: translate3d(-343px, -123px, 0) rotate(45deg);
+	}
+	 45% {
+		 transform: translate3d(-283px, -183px, 0) rotate(55deg);
+	}
+	 60% {
+		 transform: translate3d(-263px, -203px, 0) rotate(45deg);
+	}
+	 75% {
+		 transform: translate3d(-243px, -223px, 0) rotate(35deg);
+	}
+	 90% {
+		 transform: translate3d(-223px, -243px, 0) rotate(45deg);
+	}
+	 100% {
+		 transform: translate3d(-203px, -263px, 0) rotate(55deg);
+	}
+}
+ .fill {
+	 backface-visibility: hidden;
+	 z-index: 20;
+	 position: relative;
+	 width: 250px;
+	 height: 250px;
+	 padding: 0;
+	 border-radius: 50% 50% 50% 50%;
+	 overflow: hidden;
+	 transform: rotate(-45deg);
+}
+ .fill .gooey-container {
+	 filter: url(#gooey-fill);
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 width: 300px;
+	 height: 300px;
+	 padding: 0;
+	 margin: 0;
+	 box-shadow: 0 0 0 18px #00f inset;
+	 border-radius: 50% 0 50% 50%;
+	 overflow: hidden;
+}
+ .fill .gooey-container .level, .fill .gooey-container .bubble {
+	 background: #ff4081;
+}
+ .fill .gooey-container .level {
+	 display: block;
+	 margin: 0 auto;
+	 position: absolute;
+	 top: 300px;
+	 left: 50%;
+	 width: 500px;
+	 height: 350px;
+	 text-align: center;
+	 transform-origin: 50% 0;
+	 transform: translate3d(-413px, -53px, 0) rotate(45deg);
+	 animation: fill-level 5s linear infinite;
+	 box-shadow: 0 0 100px 0 #00f inset, 0 0 200px 0 #00f inset;
+}
+ @keyframes fill-bubbles {
+	 0% {
+		 transform: translate3d(-100px, -20px, 0) rotate(0deg);
+	}
+	 50% {
+		 transform: translate3d(100px, -40px, 0) rotate(180deg);
+	}
+	 100% {
+		 transform: translate3d(-100px, -20px, 0) rotate(360deg);
+	}
+}
+ .fill .gooey-container .bubble {
+	 content: "";
+	 display: inline-block;
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 50%;
+	 transform-origin: 50% 50%;
+	 transform: rotate(0deg) translate3d(0, 0, 0);
+	 box-shadow: 0 0 30px 20px #00f inset;
+}
+ .fill .gooey-container .bubble:nth-child(1) {
+	 animation: fill-bubbles 1.5s ease 0.5s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(2) {
+	 animation: fill-bubbles 3s ease 0.25s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(3) {
+	 animation: fill-bubbles 4.5s ease 0.1666666667s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(4) {
+	 animation: fill-bubbles 6s ease 0.125s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(5) {
+	 animation: fill-bubbles 7.5s ease 0.1s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(6) {
+	 animation: fill-bubbles 9s ease 0.0833333333s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(7) {
+	 animation: fill-bubbles 10.5s ease 0.0714285714s infinite;
+}
+ .fill .gooey-container .bubble:nth-child(8) {
+	 animation: fill-bubbles 12s ease 0.0625s infinite;
+}
+ 
+/* .box {
+    
+    width:50px;
+    height: 50px;
+    
+    margin: 450px auto;
+    animation:  box 10s infinite ease;
+}
+@keyframes box {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */

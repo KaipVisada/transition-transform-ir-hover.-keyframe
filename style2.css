@@ -1,0 +1,122 @@
+body {
+    background: #FFB085;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 150px;
+    padding: 10px;
+    
+}
+
+
+div.box1 {
+    text-transform:capitalize ;
+    line-height: 100px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: #9A0680;
+    border-radius: 50% 25% 25% 50%;
+    transition: width 2s, height 2s, transform 2s ;
+}
+div.box1:hover {
+    width: 300px;
+    height: 300px;
+    transition: all 3s;
+    background: #557C55;
+}
+
+
+div.box2 {
+    text-transform:capitalize ;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background: #998CEB;
+    color: #EF2F88;
+    border-radius: 10px;
+}
+div.box2:hover {
+    width: 100px;
+    height: 100px;
+    transition: all 3s;
+    transform: rotate3d(1, 2, 3, 270deg);
+    background: #FF5403;
+    color: #F2F013;
+}
+div.box3 {
+    text-transform:capitalize ;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background: #DF2E2E;
+    color: #6F69AC;
+    border-radius: 10px;
+}
+div.box3:hover {
+    width: 130px;
+    height: 130px;
+    transition: all 3s;
+    transform: rotateX(400deg);
+    background: #78DEC7;
+    color: #F7FD04;
+}
+div.box4 {
+    text-transform:capitalize ;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    background: #440A67;
+    color: #1E6F5C;
+    border-radius: 3px;
+    transform: scale(2, 2);
+    transition: all 3s;
+}
+div.box4:hover {
+    width: 50px;
+    height: 50px;
+    transition: all 3s;
+    background: #FA1E0E;
+    color: #E4BAD4;
+    font-size: 15px;
+    
+}
+
+div.box5 {
+    font-size: 20px;
+    text-transform:capitalize;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background: #81B214;
+    color: #440047;
+    transform: scaleX(1);
+    transition: all 3s;
+}
+
+div.box5:hover {
+    width: 250px;
+    height: 250px;
+    background: #07689F;
+    color: #8CBA51;
+    font-size: 60px;
+}
+
+div.box6 {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background: #AA26DA;
+    color: #445C3C ;
+    transition: width 0.5s;
+    border-radius: 3px;
+    transform: matrix(1, -0.6, -0.3, 1, 2, 2);
+    transition: all 2s;
+}
+div.box6:hover {
+    background: #A0C334;
+    color: #837DFF;
+    font-size: 80px;
+    width: 250px;
+    height: 250px;
+    transform: matrix(1, -0.5, -0.1, 1, 0, 1);
+}
